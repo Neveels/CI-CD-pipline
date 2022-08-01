@@ -7,13 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 @SpringBootApplication
 public class CicdActionsApplication {
 
-    echo "# CI-CD-pipline" >> README.md
-    git init
-    git add README.md
-    git commit -m "first commit"
-    git branch -M main
-    git remote add origin https://github.com/Neveels/CI-CD-pipline.git
-    git push -u origin main
 
     @GetMapping("/hello")
     public String welcome() {
